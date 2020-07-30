@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <style>
-        body{
-          
-        }
+<style>
+    
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&family=Kurale&family=Lato:ital,wght@0,100;1,100;1,300&family=Martel:wght@200;600&family=Montserrat:ital,wght@0,600;0,800;0,900;1,400&family=PT+Serif:ital@0;1&family=Quicksand:wght@300;500&family=Raleway:wght@300&family=Roboto+Slab:wght@100&family=Roboto:wght@100;300;400;900&display=swap'); 
+    
 .brand {
-
   width: 200px;
   height: 200px;
   position: relative;
   margin: 0 auto;
-   background:blue;/*#181D26*/
+   background:blue;
     border-radius: 50%;
 }
 .brand:before {
@@ -32,19 +31,21 @@
   position: absolute;
   
   z-index: 99999 !important;
-    transform: scale(1.9);
 }
-
 .logo{
   animation: 5s linear infinite;
   animation-name: rotate-0;
   animation-delay: 0s;
   transform-origin: 50% 50%;
-  transform: rotate(0deg);
-  
+  transform: rotate(0deg); 
 }
-
-
+    .frase{
+        position: absolute;
+        bottom: 60px;left: 60px;
+        font-size: 14px;
+        color: red;font-style: italic; font-weight: 600; 
+1.	font-family: 'PT Serif', serif;
+    }  
 svg path{
   positon:absolute;
   fill:none;
@@ -73,7 +74,6 @@ svg path{
   animation-delay: .7s;
 }
 
-
 @keyframes scale-1 {
   0%{
     transform: scale(1);
@@ -83,31 +83,28 @@ svg path{
     transform: scale(1);
   } 
 }
-
 @keyframes rotate-0 {
   from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 } 
-
 @keyframes rotate-1 {
   from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
-
 @keyframes rotate-2 {
   from { transform: rotate(0deg); }
     to { transform: rotate(-360deg); }
 }
-
 @keyframes rotate-3 {
   from { transform: rotate(0deg); }
     to { transform: rotate(0deg); }
 }
-    </style>
+</style>
+
 </head>
 <body>
-    <div class="brand">
-<div class="logo">
+<div class="brand">
+    <div class="logo">
   <svg width="200px" height="200px" >
         <path stroke="#ff004e" stroke-width="0" fill="#ff004e" d="M140.773,59.227C137.316,55.771,130.055,50,100,50
         s-37.317,5.771-40.774,9.227C55.77,62.684,49.999,69.104,50,100c-0.001,30.896,5.77,37.316,9.227,40.773
@@ -125,6 +122,8 @@ svg path{
         S144.229,62.683,140.773,59.227z"/>
   </svg>
 </div>
+<div class="frase">TiendaVirtual</div>
 </div>
+
 </body>
 </html>
